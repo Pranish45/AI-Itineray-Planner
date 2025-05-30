@@ -25,7 +25,7 @@ The **AI Itinerary Planner** is your smart travel companion, designed to create 
 
 ## 🧠 Powered By
 
-* **OpenAI GPT API** – for intelligent travel logic and customization.
+* **GeminiAI GPT API** – for intelligent travel logic and customization.
 * **Google Maps API / Travel APIs** – for real-time location data and directions.
 * **Python** – core backend logic.
 * **Streamlit / Flask** *(if applicable)* – for web interface (optional extension).
