@@ -42,3 +42,32 @@ The **AI Itinerary Planner** is your smart travel companion, designed to create 
 
 ---
 
+## 💻 Interactive Web UI
+
+A brand-new Streamlit interface makes the AI Itinerary Planner accessible from any modern browser.
+
+### Quick start
+
+```bash
+# Install dependencies (preferably inside a virtualenv)
+pip install -r requirements.txt
+
+# Set your Gemini API key (replace with your own)
+export GEMINI_API_KEY="<YOUR_API_KEY>"
+
+# Launch the web app
+streamlit run streamlit_app.py
+```
+
+The app will automatically open at `http://localhost:8501` (or whichever port Streamlit selects).
+
+### Highlights
+
+• Sidebar controls for city, trip duration, and themed interests
+• Multiselect & custom tags for fully personalized journeys
+• Gemini-powered itinerary generation with real-time progress spinner
+• Per-day expanders for a clean, focused reading experience
+• Mobile-friendly, responsive design out-of-the-box
+
+Enjoy a friction-less planning experience — **plan less, travel more!**
+
