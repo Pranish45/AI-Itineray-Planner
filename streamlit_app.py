@@ -10,7 +10,7 @@ from google.generativeai import configure, GenerativeModel
 # ---------------------------------------------------------------------------
 # The Gemini / Google Generative AI key should be provided as an environment
 # variable so that secrets are not hard-coded in source control.
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GEMINI_API_KEY = os.getenv("AIzaSyCjvR39xym6c9bEdo_qaPkwI0LUC7qw-Mo")
 if not GEMINI_API_KEY:
     st.warning(
         "⚠️  GEMINI_API_KEY environment variable not set. "
