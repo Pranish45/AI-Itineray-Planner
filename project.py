@@ -1,7 +1,34 @@
+# 🧠✈️ AI Travel Planner - Legacy Tkinter Version
+# 
+# This file has been upgraded to a cutting-edge web application!
+# 
+# 🚀 NEW FEATURES:
+# - Modern React frontend with stunning animations
+# - FastAPI backend with WebSocket support
+# - Real-time itinerary generation progress
+# - Interactive drag-and-drop itinerary editing
+# - Data visualizations and travel insights
+# - Mobile-responsive design with PWA capabilities
+# - Docker deployment with production optimization
+#
+# 🌐 To run the new web application:
+# 1. Backend: cd backend && python -m uvicorn main:app --reload --host 0.0.0.0 --port 8000
+# 2. Frontend: cd frontend && npm start
+# 3. Visit: http://localhost:3000
+#
+# 📦 For production deployment:
+# docker-compose up -d --build
+#
+# This legacy code is preserved for reference:
+
 from typing import TypedDict, Annotated, List
 import tkinter as tk
 from tkinter import messagebox, scrolledtext
 from google.generativeai import configure, GenerativeModel
+
+print("🚀 This is the legacy Tkinter version!")
+print("🌟 Check out the new cutting-edge web application in the 'frontend' and 'backend' folders!")
+print("💡 Run 'python backend/main.py' and 'npm start' in frontend/ for the modern experience!")
 
 # Configure Gemini API (Replace with your own API key)
 configure(api_key="AIzaSyCjvR39xym6c9bEdo_qaPkwI0LUC7qw-Mo")
@@ -35,7 +62,7 @@ def generate_itinerary(city: str, interests: List[str], days: int) -> str:
     except Exception as e:
         return f"⚠️ Error generating itinerary: {str(e)}"
 
-# GUI Setup
+# GUI Setup (Legacy Tkinter Version)
 def create_ui():
     def get_itinerary():
         city = city_entry.get().strip()
@@ -82,9 +109,14 @@ def create_ui():
         widget.insert(tk.END, text, tag)
 
     root = tk.Tk()
-    root.title("🌍 AI Travel Planner")
+    root.title("🌍 AI Travel Planner (Legacy Version)")
     root.geometry("1920x1080")
     root.configure(bg="#f0f8ff")
+
+    # Add upgrade notice
+    upgrade_label = tk.Label(root, text="🚀 Upgrade to the new web version for a better experience!", 
+                           font=("Arial", 16, "bold"), bg="#ff6b6b", fg="white", pady=10)
+    upgrade_label.pack(fill=tk.X)
 
     tk.Label(root, text="Enter City:", font=("Arial", 14, "bold"), bg="#f0f8ff", fg="#333").pack(pady=5)
     city_entry = tk.Entry(root, font=("Arial", 12), width=30)
@@ -115,5 +147,5 @@ def create_ui():
 
     root.mainloop()
 
-# Start the UI
-create_ui()
+# Uncomment to run legacy version
+# create_ui()
