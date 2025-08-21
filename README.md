@@ -244,7 +244,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **React ecosystem** for the amazing developer experience
 
 ---
-
-**Made with ❤️ for travelers worldwide**
-
-*Experience the future of travel planning with AI-powered personalization and cutting-edge web technology.*
